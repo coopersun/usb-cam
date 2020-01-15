@@ -1,0 +1,6 @@
+<launch>
+  <node name="usb_cam_receiver" pkg="usb_cam" type="usb_cam_receiver_node" output="screen" >
+    <param name="camera_topic" value="/usb_cam_right/image_raw" />
+    <param name="queue_length" value="5" />
+  </node>
+</launch>
